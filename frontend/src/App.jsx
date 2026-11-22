@@ -8,7 +8,9 @@ import Blogs from './pages/Blogs';
 import Explore from './pages/Explore';
 import Media from './pages/Media';
 import About from './pages/About';
+import Donate from './pages/Donate';
 import CreateBlog from './pages/CreateBlog';
+import FloatingDonate from './components/FloatingDonate';
 
 import './css/App.css';
 
@@ -35,13 +37,15 @@ function AppLayout() {
           <Route path="/media" element={<Media Gallery />} />
           <Route path="/bookmarks" element={<Placeholder title="Bookmarks" />} />
           <Route path="/about" element={<About KCA />} />
-          <Route path="/donate" element={<Placeholder title="Support KCA" />} />
+          <Route path="/donate" element={<Donate KCA />} />
           <Route path="/login" element={<Placeholder title="Welcome Back" />} />
           <Route path="/register" element={<Placeholder title="Join KCA" />} />
         </Routes>
       </div>
 
       <RightSidebar />
+
+      <FloatingDonate />
     </div>
   );
 }
