@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import RightSidebar from './components/RightSidebar';
 import Home from './pages/Home';
 import Blogs from './pages/Blogs';
+import Explore from './pages/Explore';
 import CreateBlog from './pages/CreateBlog';
 
 import './css/App.css';
@@ -26,7 +27,7 @@ function AppLayout() {
       <div className="main-layout">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Placeholder title="Explore" />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/write-blog" element={<CreateBlog />} />
           <Route path="/media" element={<Placeholder title="Media Gallery" />} />

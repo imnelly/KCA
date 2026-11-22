@@ -1,0 +1,352 @@
+.explore-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    color: var(--text-primary);
+}
+
+.explore-header {
+    padding: 30px 25px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explore-eyebrow {
+    color: var(--kca-green);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.explore-header h1 {
+    margin: 10px 0 8px;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.explore-header p {
+    max-width: 480px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Search */
+
+.explore-search-section {
+    padding: 22px 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explore-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px 15px;
+    background: #f7f8f8;
+    border: 1px solid #eceeee;
+    border-radius: 8px;
+    color: #888;
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+.explore-search:focus-within {
+    border-color: var(--kca-green);
+    background: #fff;
+}
+
+.explore-search>svg {
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.explore-search input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 12px;
+}
+
+.explore-search input::placeholder {
+    color: #999;
+}
+
+.explore-search button {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    color: #777;
+    font-size: 16px;
+}
+
+/* Section headings */
+
+.trending-section,
+.discover-section {
+    padding: 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.explore-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.heading-icon {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    background: #eaf6ef;
+    color: var(--kca-green);
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.explore-section-heading h2 {
+    margin: 0 0 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.explore-section-heading p {
+    color: var(--text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Trending topics */
+
+.trending-topics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.trending-topic {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+    padding: 13px;
+    background: #fafbfa;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    text-align: left;
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+.trending-topic:hover,
+.trending-topic.active {
+    background: #f0f8f2;
+    border-color: #a8d9ba;
+}
+
+.topic-number {
+    color: #b0b0b0;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.topic-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+    flex: 1;
+}
+
+.topic-details strong {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    overflow: hidden;
+    color: #222;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topic-details strong svg {
+    flex-shrink: 0;
+    color: var(--kca-green);
+}
+
+.topic-details small {
+    color: #999;
+    font-size: 10px;
+}
+
+.topic-arrow {
+    flex-shrink: 0;
+    color: #999;
+    font-size: 15px;
+}
+
+/* Discover posts */
+
+.discover-section {
+    padding-bottom: 0;
+}
+
+.discover-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.discover-count {
+    color: #999;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.explore-categories {
+    display: flex;
+    gap: 8px;
+    margin: 22px -25px 0;
+    padding: 0 25px 17px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.explore-categories::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-categories button {
+    flex-shrink: 0;
+    padding: 8px 13px;
+    background: #f5f6f6;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #666;
+    font-size: 10px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.explore-categories button:hover {
+    color: var(--kca-green);
+    background: #edf7f0;
+}
+
+.explore-categories button.category-active {
+    color: #fff;
+    background: var(--kca-green);
+    border-color: var(--kca-green);
+}
+
+.active-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 0;
+    color: #777;
+    font-size: 11px;
+    border-bottom: 1px solid var(--border);
+}
+
+.active-filter strong {
+    color: #222;
+}
+
+.active-filter button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    color: var(--kca-green);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Empty state */
+
+.explore-empty-state {
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.explore-empty-state>svg {
+    margin-bottom: 15px;
+    color: #aaa;
+    font-size: 30px;
+}
+
+.explore-empty-state h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.explore-empty-state p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.explore-empty-state button {
+    margin-top: 18px;
+    padding: 10px 17px;
+    background: var(--kca-green);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .explore-header {
+        padding: 24px 17px;
+    }
+
+    .explore-search-section {
+        padding: 17px;
+    }
+
+    .trending-section,
+    .discover-section {
+        padding: 21px 17px;
+    }
+
+    .trending-topics {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-categories {
+        margin-right: -17px;
+        margin-left: -17px;
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+}
+
+@media (max-width: 380px) {
+    .discover-heading {
+        align-items: flex-start;
+    }
+
+    .discover-count {
+        padding-top: 5px;
+        font-size: 9px;
+    }
+}
