@@ -6,6 +6,7 @@ import RightSidebar from './components/RightSidebar';
 import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 import Explore from './pages/Explore';
+import Media from './pages/Media';
 import CreateBlog from './pages/CreateBlog';
 
 import './css/App.css';
@@ -30,7 +31,7 @@ function AppLayout() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/write-blog" element={<CreateBlog />} />
-          <Route path="/media" element={<Placeholder title="Media Gallery" />} />
+          <Route path="/media" element={<Media Gallery />} />
           <Route path="/bookmarks" element={<Placeholder title="Bookmarks" />} />
           <Route path="/about" element={<Placeholder title="About KCA" />} />
           <Route path="/donate" element={<Placeholder title="Support KCA" />} />
